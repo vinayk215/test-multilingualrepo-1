@@ -7,7 +7,7 @@ pipeline{
     stages{
        stage('GetCode'){
             steps{
-                git branch: 'main', changelog: false, poll: false, url: 'https://github.com/vinayk215/test-multilingualrepo-1.git'
+                git branch: 'bad', changelog: false, poll: false, url: 'https://github.com/vinayk215/test-multilingualrepo-1-QG.git'
             }
          }        
        stage('Build'){
