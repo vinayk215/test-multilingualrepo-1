@@ -1,46 +1,28 @@
-package com.acme.multilingual;
+package company.trustingSocial;
 
-public class HelloWorld {
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.*;
 
-  void sayHello() {
-    System.out.println("Hello World!");
-  }
-
-  int i=0;
-
-    private String Simple;
-
-    private String Simple1;
-
-    private String Simpl2;
-
-    void send(){
-
-        System.out.println("Hello");
-      System.out.println();
-
-      System.out.println();
-
-      System.out.println();
-
-      System.out.println();
-
-      System.out.println();
-
-      System.out.println();
-
-      System.out.println();
-
+public class Bugs {
+	public static void main(String args[] ) throws Exception {
+        //BufferedReader
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int N = Integer.parseInt(br.readLine());
+        List<Integer> arrayList = new ArrayList<Integer>();
+        for(int i = 0; i < N; i++){
+            String[] input = br.readLine().split(" ");
+            if(Integer.parseInt(input[0]) == 1){
+                arrayList.add(Integer.parseInt(input[1]));
+            }
+            if(Integer.parseInt(input[0]) == 2){
+                Collections.sort(arrayList, Collections.reverseOrder());
+                if(arrayList.size() < 3){
+                    System.out.println("Not enough enemies");
+                }else{
+                    System.out.println(arrayList.get((arrayList.size()/3)-1));
+                }
+            }
+        }
     }
-
-    void rev(){
-
-        System.out.println("Hello");
-
-    }
-
-  void notCovered() {
-    System.out.println("This method is not covered by unit tests");
-  }
-
 }
