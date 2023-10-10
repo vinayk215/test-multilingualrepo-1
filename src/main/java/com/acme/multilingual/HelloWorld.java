@@ -8,28 +8,11 @@ public class HelloWorld {
 
   int i=0;
 
-    private String Simple;
-
-    private String Simple1;
-
-    private String Simpl2;
+  
 
     void send(){
 
-        System.out.println("Hello");
-      System.out.println();
 
-      System.out.println();
-
-      System.out.println();
-
-      System.out.println();
-
-      System.out.println();
-
-      System.out.println();
-
-      System.out.println();
 
     }
 
